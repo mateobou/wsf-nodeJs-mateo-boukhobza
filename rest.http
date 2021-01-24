@@ -1,0 +1,30 @@
+GET http://localhost:3000/vehicules
+
+###
+GET http://localhost:3000/vehicules?marque=peugeot&model[]=307&model[]=3008
+
+###
+GET http://localhost:3000/concessionaire/
+
+###
+DELETE http://localhost:3000/vehicules/2
+
+###
+POST http://localhost:3000/owner
+Content-Type: application/json
+
+{
+    "firstname":"Matéo",
+    "lastname":"Boukhobza",
+    "licenseType": "voiture",
+    "birthday": ""
+}
+
+
+###
+PUT http://localhost:3000/owner/2
+Content-Type: application/json
+
+{
+    "lastname": ""
+}
